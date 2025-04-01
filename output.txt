@@ -1,0 +1,166 @@
+index                       0
+Patient Id                  0
+Age                         0
+Gender                      0
+Air Pollution               0
+Alcohol use                 0
+Dust Allergy                0
+OccuPational Hazards        0
+Genetic Risk                0
+chronic Lung Disease        0
+Balanced Diet               0
+Obesity                     0
+Smoking                     0
+Passive Smoker              0
+Chest Pain                  0
+Coughing of Blood           0
+Fatigue                     0
+Weight Loss                 0
+Shortness of Breath         0
+Wheezing                    0
+Swallowing Difficulty       0
+Clubbing of Finger Nails    0
+Frequent Cold               0
+Dry Cough                   0
+Snoring                     0
+Level                       0
+dtype: int64
+             index          Age  ...    Dry Cough      Snoring
+count  1000.000000  1000.000000  ...  1000.000000  1000.000000
+mean    499.500000    37.174000  ...     3.853000     2.926000
+std     288.819436    12.005493  ...     2.039007     1.474686
+min       0.000000    14.000000  ...     1.000000     1.000000
+25%     249.750000    27.750000  ...     2.000000     2.000000
+50%     499.500000    36.000000  ...     4.000000     3.000000
+75%     749.250000    45.000000  ...     6.000000     4.000000
+max     999.000000    73.000000  ...     7.000000     7.000000
+
+[8 rows x 24 columns]
+Selected Features:
+ Index(['Air Pollution', 'Alcohol use', 'OccuPational Hazards', 'Genetic Risk',
+       'chronic Lung Disease', 'Balanced Diet', 'Obesity', 'Smoking',
+       'Passive Smoker', 'Chest Pain', 'Coughing of Blood', 'Fatigue',
+       'Level'],
+      dtype='object')
+Data preprocessing complete!
+Model: Logistic Regression
+Accuracy: 1.0
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        82
+           1       1.00      1.00      1.00        55
+           2       1.00      1.00      1.00        63
+
+    accuracy                           1.00       200
+   macro avg       1.00      1.00      1.00       200
+weighted avg       1.00      1.00      1.00       200
+
+Confusion Matrix:
+ [[82  0  0]
+ [ 0 55  0]
+ [ 0  0 63]]
+--------------------------------------------------
+Model: Decision Tree
+Accuracy: 1.0
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        82
+           1       1.00      1.00      1.00        55
+           2       1.00      1.00      1.00        63
+
+    accuracy                           1.00       200
+   macro avg       1.00      1.00      1.00       200
+weighted avg       1.00      1.00      1.00       200
+
+Confusion Matrix:
+ [[82  0  0]
+ [ 0 55  0]
+ [ 0  0 63]]
+--------------------------------------------------
+Model: Random Forest
+Accuracy: 1.0
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        82
+           1       1.00      1.00      1.00        55
+           2       1.00      1.00      1.00        63
+
+    accuracy                           1.00       200
+   macro avg       1.00      1.00      1.00       200
+weighted avg       1.00      1.00      1.00       200
+
+Confusion Matrix:
+ [[82  0  0]
+ [ 0 55  0]
+ [ 0  0 63]]
+--------------------------------------------------
+Best Logistic Regression Parameters: {'C': 1, 'solver': 'lbfgs'}
+Best Logistic Regression Accuracy: 1.0
+Best Decision Tree Parameters: {'max_depth': 5, 'min_samples_split': 2}
+Best Decision Tree Accuracy: 1.0
+Best Random Forest Parameters: {'max_depth': 5, 'min_samples_split': 2, 'n_estimators': 50}
+Best Random Forest Accuracy: 1.0
+
+Logistic Regression Performance:
+Accuracy: 1.0
+Precision: 1.0
+Recall: 1.0
+F1-score: 1.0
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        82
+           1       1.00      1.00      1.00        55
+           2       1.00      1.00      1.00        63
+
+    accuracy                           1.00       200
+   macro avg       1.00      1.00      1.00       200
+weighted avg       1.00      1.00      1.00       200
+
+
+Decision Tree Performance:
+Accuracy: 1.0
+Precision: 1.0
+Recall: 1.0
+F1-score: 1.0
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        82
+           1       1.00      1.00      1.00        55
+           2       1.00      1.00      1.00        63
+
+    accuracy                           1.00       200
+   macro avg       1.00      1.00      1.00       200
+weighted avg       1.00      1.00      1.00       200
+
+
+Random Forest Performance:
+Accuracy: 1.0
+Precision: 1.0
+Recall: 1.0
+F1-score: 1.0
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        82
+           1       1.00      1.00      1.00        55
+           2       1.00      1.00      1.00        63
+
+    accuracy                           1.00       200
+   macro avg       1.00      1.00      1.00       200
+weighted avg       1.00      1.00      1.00       200
+
+
+Random Forest Regressor Regression Performance:
+RMSE: 0.0
+R-squared: 1.0
+Logistic Regression - Mean Accuracy: 1.0000, Std Dev: 0.0000
+Decision Tree - Mean Accuracy: 1.0000, Std Dev: 0.0000
+Random Forest - Mean Accuracy: 1.0000, Std Dev: 0.0000
