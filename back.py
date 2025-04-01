@@ -14,7 +14,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, r
 import joblib
 
 # Load the dataset
-df = pd.read_csv("C:/Users/DAVIS MYRE/Desktop/NOTEPADS/cancer patient data sets.csv")
+df = pd.read_csv("cancer_data.csv")
 
 # Check for missing values
 print(df.isnull().sum())
